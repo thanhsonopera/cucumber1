@@ -14,6 +14,15 @@
 
 ### npm install
 
+
+
+## scripts : Result 
+### "test": "cucumber-js -f @cucumber/pretty-formatter --require-module @babel/register -f json:report.json",
+### "generate-report": "node generate-report.js"
+
+## scripts : Feature
+### "test": "cucumber-js -f @cucumber/pretty-formatter --require-module @babel/register --format html:report.html"
+
 ## Running test
 
 ### npm test

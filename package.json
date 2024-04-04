@@ -5,6 +5,7 @@
     "@babel/preset-env": "^7.24.3",
     "@babel/register": "^7.23.7",
     "@cucumber/cucumber": "^10.3.2",
+    "@cucumber/pretty-formatter": "latest",
     "babel-plugin-module-resolver": "^5.0.0",
     "cucumber-html-reporter": "^7.1.1"
   },
@@ -132,7 +133,7 @@
     "yup": "^1.2.0"
   },
   "scripts": {
-    "test": "cucumber-js --require-module @babel/register --format json:report.json",
+    "test": "cucumber-js -f @cucumber/pretty-formatter --require-module @babel/register -f json:report.json",
     "generate-report": "node generate-report.js"
   },
   "author": "",
